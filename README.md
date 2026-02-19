@@ -62,19 +62,3 @@
 *   `exit_loop()`: ส่งสัญญาณเพื่อแจ้งให้ `LoopAgent` หยุดการทำงานวนซ้ำ
 *   `set_state(tool_context: ToolContext, field: str, response: str)`: บันทึกหรืออัปเดตข้อมูลลงใน State ของเซสชัน
 *   `write_file(tool_context: ToolContext, filename: str, content: str)`: เขียน `content` ที่กำหนดลงในไฟล์ชื่อ `filename`
-
-## การตั้งค่าและการรัน
-
-1.  **ติดตั้ง Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-2.  **ตั้งค่า Environment:**
-    สร้างไฟล์ `.env` และกำหนดค่า `MODEL` ที่ต้องการใช้ (เช่น `gemini-1.5-flash`)
-
-3.  **รัน Agent:**
-    สามารถรัน workflow ได้โดยใช้ ADK CLI
-    ```bash
-    adk run /home/student_00_2abf11ed15eb/adk_multiagent_systems/workflow_agents/agent.py
-    ```
